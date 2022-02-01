@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import About from './components/About';
 import Howto from './components/Howto';
 import Contact from './components/contact/Contact';
-
+import Faq from './components/Faq';
 import Error404 from './components/reusablecomp/Error404';
 
 ReactDOM.render(
@@ -18,7 +18,7 @@ ReactDOM.render(
         <Route exact path="/"  element={<App/>}  ></Route> 
         <Route path="/about"  element={<About/>}  > </Route>
         <Route path="/howtoapply" element={<Howto/>} />
-       {/* <Route path="/faq" element={<Faq/>} />*/}
+        <Route path="/faq" element={<Faq/>} />
         <Route path="/contact" element={<Contact/>} />  
         <Route path="*" element={<Error404/>} />           
     </Routes>

@@ -6,6 +6,7 @@ import About from './components/About';
 import TopNavBar from './layout/TopNavBar';
 import Howto from './components/Howto';
 import Contact from './components/contact/Contact';
+import Faq from './components/Faq';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -44,7 +45,7 @@ function App() {
         <>       
         <About/>
          <Howto/>         
-         {/* <Faq/>*/} 
+         <Faq/>
          <Contact/> 
         </>
       </Content>
