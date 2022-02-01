@@ -1,5 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-import Card from './Card';
+import Card from './reusablecomp/Card';
 import aboutus from '../images/aboutus.png';
 import { slideInRight } from 'react-animations';
 
