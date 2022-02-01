@@ -5,7 +5,7 @@ import TopScene from '../images/TopScene.svg';
 import mobel from '../images/mobel.svg';
 import Union from "../images/Union.png";
 import { slideInLeft } from 'react-animations';
-
+import StartButton from './reusablecomp/StartButton';
 const COLORS = {
   text: 'white',
   background: 'transparent',
@@ -70,9 +70,9 @@ const StButton=styled.button`
     position: absolute;
     top: 60%;
     left: 14%;
-  background-color: ${COLORS.btncolor};
+   background-color: ${COLORS.btncolor};
   font-family:Rubik;
-  color:white; 
+  color:${COLORS.text}; 
   font-weight: 700;
   letter-spacing: 0.05rem;
   font-size:1rem;
@@ -82,7 +82,7 @@ const StButton=styled.button`
   height: 4rem;
   border: 2px solid  ${COLORS.btncolor};
   border-radius: 8px;
-  width: 18rem;
+  width: 16rem; 
   @media screen and (max-width: 640px) {      
     width: auto;       
     height: 3rem;
@@ -97,7 +97,7 @@ const Home =({title})=> {
         
         <Heading>{title}</Heading>
         <RedMobel src={mobel} width="50%" alt="truck"/> 
-        <StButton>GET STARTED &nbsp;  &nbsp;<img src={Union} width="30px"alt="arrow right"/></StButton>      
+        <StButton>GET STARTED &nbsp; <img src={Union} width="30px"alt="arrow right"/></StButton>      
       </HomeDiv>
     );
   

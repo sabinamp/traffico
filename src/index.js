@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import About from './components/About';
-import Home from './components/Home';
-import Error404 from './components/Error404';
+import Howto from './components/Howto';
+
+import Error404 from './components/reusablecomp/Error404';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,8 +16,8 @@ ReactDOM.render(
     <Routes>
         <Route exact path="/"  element={<App/>}  ></Route> 
         <Route path="/about"  element={<About/>}  > </Route>
-       {/*  <Route path="/howtoapply" element={<Howto/>} />
-        <Route path="/faq" element={<Faq/>} />
+        <Route path="/howtoapply" element={<Howto/>} />
+       {/* <Route path="/faq" element={<Faq/>} />
         <Route path="/contact" element={<Contact/>} />  */}
         <Route path="*" element={<Error404/>} />           
     </Routes>

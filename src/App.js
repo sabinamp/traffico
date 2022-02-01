@@ -4,7 +4,7 @@ import Footer from './layout/Footer';
 import Content from './layout/Content';
 import About from './components/About';
 import TopNavBar from './layout/TopNavBar';
-
+import Howto from './components/Howto';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -42,8 +42,8 @@ function App() {
       <Content>
         <>       
         <About/>
-        {/*  <Howto/>         
-         <Faq/>
+         <Howto/>         
+         {/* <Faq/>
          <Contact/> */} 
         </>
       </Content>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Union from '../images/Union.png';
+import Union from '../../images/Union.png';
 
 const BTNCOLORS = {
     text: 'white',
