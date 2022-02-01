@@ -13,15 +13,26 @@ const ContactDiv = styled.div`
   color: white;
   margin-top: 8rem;
   padding-bottom: 0rem;
- `;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-contact: center;
+  @media screen and (max-width: 640px) {   
+    flex-direction: column;
+    align-items: center;
+    justify-contact: center;        
+    min-height:100vh;      
+  }
+  `;
 
 const BG=styled.img`
-width=auto;
-max-height=100%;
+width=90%;
+height=auto;
 padding:0;
 margin-top:0rem;
 @media screen and (max-width: 640px) {           
-  height:auto;      
+  min-height:100vh;    
+    
 }
 `;
 
@@ -35,9 +46,9 @@ left: 0%;
 top: -20%;
 animation: 1.5s ${keyframes(slideInLeft)} linear;
 @media screen and (max-width: 640px) {           
-  width:40%;  
+  width:50%;  
   height:auto;  
-  top: -2%;
+  top: -8%;
 }
 `;
 
@@ -50,19 +61,20 @@ font-weight:400;
 line-height: 2.1rem;
 padding:0.5rem 2rem 0.5rem 0rem;
 margin:0rem 3rem 0rem 2rem;
-width:30%;
+
 `;
 
 const TextContainer=styled.div`
 position: absolute;
 left: 14%;
 top: 22%;
-width: 70%;
+width: 30%;
 height: auto;
+margin:1rem 1rem 1rem 0;
 @media screen and (max-width: 640px) {           
   width:95%;  
   height:auto;
-  top:45%;
+  top:55%;
 }
 `;
 
@@ -72,8 +84,13 @@ left: 48%;
 top: -9%;
 width:36%;
 height:auto;
-@media screen and (max-width: 640px) {           
-  width:44%;  
+@media screen and (max-width: 640px) {    
+   left:25%;       
+  width:70%;  
+  top: 10%;
+  height: auto;
+  
+  
 }
 `;
 const theme={backgroundcolor:"transparent"};

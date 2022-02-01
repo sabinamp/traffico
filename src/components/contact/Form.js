@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import GetStartedButton from "../GetStartedButton";
+import StartButton from "../reusablecomp/StartButton";
 
 const InputContainer = styled.div`
   display: flex;
@@ -85,7 +85,7 @@ const Form=(props)=>{
         <label>Email address</label>
         <StyledInput type="text" onChange={emailChangeHandler} placeholder="Email" />
        
-        <GetStartedButton txt="Get STARTED"/>
+        <StartButton txt="Get STARTED"/>
       </InputContainer>
     
         </StForm>
