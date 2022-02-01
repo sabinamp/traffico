@@ -1,5 +1,5 @@
 import { getQuestions } from "./DataService";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import QuestionList from "./QuestionList";
 import styled, { ThemeProvider } from "styled-components";
 import QuestionCard from "./QuestionCard";
@@ -99,7 +99,7 @@ const Questions = () => {
 	const [faq, setFaq] = useState(initialfaq);
 	const [displayedFaq, setDisplayedFaq] = useState([]);
 	const [nextQuestionNumber, setNextQuestionNumber] = useState(4);
-	const getQuestion = useCallback(
+	const getQuestion = useMemo(
 		(qnumber) => {
 			return faq[qnumber];
 		},
@@ -107,7 +107,7 @@ const Questions = () => {
 	);
 
 	const displayNextQuestion = useCallback(() => {
-		let item = getQuestion(nextQuestionNumber);
+		let item = faq[nextQuestionNumber];
 		console.log(item);
 		if (item) {
 			console.log("next question: " + item.title);
@@ -131,14 +131,17 @@ const Questions = () => {
 	},[]);
 
 	useEffect(() => {
-		console.log("use effect running");
+		console.log("use effect running");		
+		getAllQuestions();		
 		
-		getAllQuestions();
-		const first6Questions = faq.slice(0, 6);
+	}, [faq, getAllQuestions]);
+
+    useEffect(()=>{
+        console.log("useEffect running-set displayedFaq");
+        const first6Questions = faq.slice(0, 6);
 		(faq.length >0) && setDisplayedFaq(first6Questions);
 		console.log(displayedFaq);
-		
-	}, [faq, displayedFaq, getAllQuestions]);
+    }, [faq]);
 
 	return (
 		<div>
