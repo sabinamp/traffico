@@ -5,7 +5,7 @@ import TopScene from '../images/TopScene.svg';
 import mobel from '../images/mobel.svg';
 import Union from "../images/Union.png";
 import { slideInLeft } from 'react-animations';
-import StartButton from './reusablecomp/StartButton';
+
 const COLORS = {
   text: 'white',
   background: 'transparent',

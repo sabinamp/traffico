@@ -52,7 +52,7 @@ const Form=(props)=>{
     const [name, setName]=useState('');
     const [email, setEmail]=useState('');
 
-    const [isValidEmail, setIsValidEmail] = useState(false);
+     const [isValidEmail, setIsValidEmail] = useState(false);
     const [isEmptyName, setIsEmptyName] = useState(true);
 
     const nameChangeHandler=(e)=>{ 
@@ -75,15 +75,15 @@ const Form=(props)=>{
         }else{
             setIsValidEmail(false);
         }
-         /* console.log(`email: ${email}`)  */
-      };
+         console.log(`email: ${email}`)  
+      }; 
     return(
         <StForm>
         <InputContainer>
         <label>Name</label>
-        <StyledInput type="text" onChange={nameChangeHandler} placeholder="Your Name" />
+        <StyledInput type="text" /* onChange={nameChangeHandler} */ placeholder="Your Name" />
         <label>Email address</label>
-        <StyledInput type="text" onChange={emailChangeHandler} placeholder="Email" />
+        <StyledInput type="text" /* onChange={emailChangeHandler} */ placeholder="Email" />
        
         <StartButton txt="Get STARTED"/>
       </InputContainer>
