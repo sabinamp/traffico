@@ -1,11 +1,12 @@
 # traffico
 
-* A React single page frontend. The page is responsive. 
-* using styled-components and react-animations
-* The FAQs questions and answers are accessed at: https://lxpi9qne2a.api.quickmocker.com/getReactFAQs
-* project deployed with Netlify as it is very easy to use (documentation: https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
-* deployed at --
-* my email address: sbina_b@yahoo.com
+- A React single page frontend. The page is responsive.
+- using styled-components and react-animations
+- The FAQs questions and answers are accessed at: https://lxpi9qne2a.api.quickmocker.com/getReactFAQs
+- project deployed with Netlify as it is very easy to use (documentation: https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+- deployed at https://traffico-challenge.netlify.app/
+- my email address: sbina_b@yahoo.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -36,6 +37,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-
