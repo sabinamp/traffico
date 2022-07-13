@@ -3,9 +3,9 @@
 - A React single page frontend. The page is responsive.
 - using styled-components and react-animations
 - The FAQs questions and answers are accessed at: https://lxpi9qne2a.api.quickmocker.com/getReactFAQs
-- project deployed with Netlify as it is very easy to use (documentation: https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+- project deployed with Netlify as it is very easy to use 
 - deployed at https://traffico-challenge.netlify.app/
-- my email address: sbina_b@yahoo.com
+
 
 # Getting Started with Create React App
 
@@ -35,5 +35,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
